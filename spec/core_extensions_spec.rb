@@ -42,7 +42,7 @@ describe Array do
         end
 
         it "returns false for an empty array" do
-            expect([].any_empty?).to be_falsey
+            expect([].all_empty?).to be_truthy
         end
     end
 
@@ -56,7 +56,7 @@ describe Array do
         end
 
         it "returns true for an empty array" do
-            expect([].none_empty?).to be_truthy
+            expect([].all_empty?).to be_truthy
         end
     end
 
