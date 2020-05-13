@@ -1,0 +1,2 @@
+language = "ruby"
+run = "rspec example_game.rb"
