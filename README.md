@@ -6,6 +6,7 @@
 ## Information
 Here's a new gem for you! Play tic-tac-toe straight from your console! All the files you will need to run this are in this repository, though it cannot be run as a gem yet. Information to run the files are in the instructions yet. This program is built using Ruby v2.6.3p62.
 Lastly, this program can be run on repl.it. Just follow the following link!
+
 [![Run on Repl.it](https://repl.it/badge/github/fussykyloren/ruby-tic-tac-toe)](https://repl.it/github/fussykyloren/ruby-tic-tac-toe)
 ## Status
 At this time, the project is __*finished*__.
