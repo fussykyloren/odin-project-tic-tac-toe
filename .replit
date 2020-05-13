@@ -1,2 +1,2 @@
 language = "ruby"
-run = "rspec example_game.rb"
+run = "ruby example_game.rb"
