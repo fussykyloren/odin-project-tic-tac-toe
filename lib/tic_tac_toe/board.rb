@@ -5,6 +5,7 @@ module TicTacToe
         attr_reader :grid
         def initialize(input = {})
             @grid = input.fetch(:grid, default_grid)
+            @taken_cells = [0,0,0,0,0,0,0,0,0]
         end
 
         def get_cell(x, y)
@@ -13,6 +14,22 @@ module TicTacToe
 
         def set_cell(x, y, value)
             get_cell(x, y).value = value
+        end
+
+        def is_cell_taken(human_move)
+            mapping = {
+                "1" => [0,0],
+                "2" => [1,0],
+                "3" => [2,0],
+                "4" => [0,1],
+                "5" => [1,1],
+                "6" => [2,1],
+                "7" => [0,2],
+                "8" => [1,2],
+                "9" => [2,2]
+            }
+            x, y = mapping[human_move]
+            !get_cell(x, y).value.empty?
         end
 
         def game_over

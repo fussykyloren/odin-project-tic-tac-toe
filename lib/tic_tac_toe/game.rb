@@ -18,12 +18,12 @@ module TicTacToe
         end
 
         def get_move(human_move = gets.chomp)
-            while Integer(human_move) > 9 || Integer(human_move) < 1 || !get_cell(human_move_to_coord(human_move)).empty?
-                if !get_cell(human_move_to_coord(human_move)).empty?
-                    puts "#{current_player.name}: Space is not empty. Enter another number between 1 and 9."
+            while Integer(human_move) > 9 || Integer(human_move) < 1 || board.is_cell_taken(human_move)
+                if Integer(human_move) > 9 || Integer(human_move) < 1
+                    puts "#{current_player.name}: Number is not between 1 and 9. Try again!"
                     human_move = gets.chomp
                 else
-                    puts "#{current_player.name}: Number is not between 1 and 9. Try again!"
+                    puts "#{current_player.name}: Space is not empty. Enter another number between 1 and 9."
                     human_move = gets.chomp
                 end
             end
