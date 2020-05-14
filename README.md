@@ -9,7 +9,7 @@ Lastly, this program can be run on repl.it. Just follow the following link!
 
 [![Run on Repl.it](https://repl.it/badge/github/fussykyloren/ruby-tic-tac-toe)](https://repl.it/github/fussykyloren/ruby-tic-tac-toe)
 ## Status
-At this time, the project is __NOT *finished*__.
+At this time, the project is __*finished*__.
 ## Instructions
 To run this program, Ruby v2.6.3p62 will need to be installed. To check the version of ruby you are using, run this command in terminal:
 ```
