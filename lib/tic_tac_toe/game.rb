@@ -18,10 +18,12 @@ module TicTacToe
         end
 
         def get_move(human_move = gets.chomp)
-            while Integer(human_move) > 9 || Integer(human_move) < 1 || board.is_cell_taken(human_move)
+            while !(human_move.is_a? Integer) || board.is_cell_taken(human_move) || Integer(human_move) > 9 || Integer(human_move) < 1
                 if Integer(human_move) > 9 || Integer(human_move) < 1
                     puts "#{current_player.name}: Number is not between 1 and 9. Try again!"
                     human_move = gets.chomp
+                elsif !(human_move.is_a Integer)
+                    puts "#{current_player.name}: Value is not an integer. Enter a number between 1 and 9."
                 else
                     puts "#{current_player.name}: Space is not empty. Enter another number between 1 and 9."
                     human_move = gets.chomp
@@ -31,7 +33,8 @@ module TicTacToe
         end
 
         def game_over_message
-            return "#{current_player.name} won!" if board.game_over == :winner
+            return "#{current_player.name} won! The First Order reigns supreme.." if board.game_over == :winner && current_player.name == "Kylo"
+            return "#{current_player.name} won! The Resistance Lives!" if board.game_over == :winner && current_player.name == "Rey"
             return "The game ended in a tie." if board.game_over == :draw
         end
 

@@ -3,7 +3,7 @@ root = File.expand_path("../", File.dirname(__FILE__))
 require "#{root}/lib/tic_tac_toe.rb"
 
 puts "Welcome to Tic-Tac-Toe!"
-bob = TicTacToe::Player.new({color: "X", name: "bob"})
-frank = TicTacToe::Player.new({color: "O", name: "frank"})
-players = [bob, frank]
+kylo = TicTacToe::Player.new({color: "X", name: "Kylo"})
+rey = TicTacToe::Player.new({color: "O", name: "Rey"})
+players = [kylo, rey]
 game = TicTacToe::Game.new(players).play
