@@ -16,7 +16,7 @@ To run this program, Ruby v2.6.3p62 (or a compatible version) will need to be in
 ruby -v
 ```
 If ruby is not installed, follow these [instructions](https://www.ruby-lang.org/en/documentation/installation/) to install it.
-After ruby is installed, you should clone this repositroy to a place easily accessible to you using this command in terminal:
+After ruby is installed, you should clone this repository to a place easily accessible to you using this command in terminal:
 ```
 git clone https://github.com/fussykyloren/odin-project-tic-tac-toe.git
 ```
